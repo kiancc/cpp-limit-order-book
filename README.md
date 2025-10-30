@@ -181,31 +181,6 @@ const std::vector<Trade>& get_trades() const;  // Get trade history
 void clear();                  // Reset all state
 void benchmark(int n_orders);  // Performance test
 ```
-
-## Improvements Over Original
-
-1. **Data Structures**
-   - ✅ Replaced `vector` with `deque` for O(1) front removal
-   - ✅ Added `order_index` hash map for O(1) cancellation
-   - ✅ Removed `using namespace std` (better practice)
-
-2. **Features**
-   - ✅ Trade recording with buyer/seller IDs
-   - ✅ Market order support
-   - ✅ Total orders tracking
-   - ✅ Clear/reset functionality
-
-3. **Testing**
-   - ✅ Comprehensive test suite with 10+ scenarios
-   - ✅ Edge case coverage
-   - ✅ Stress and performance tests
-
-4. **Code Quality**
-   - ✅ Explicit `std::` namespace usage
-   - ✅ Better variable naming
-   - ✅ More comments
-   - ✅ Makefile for easy building
-
 ## Future Enhancements
 
 ### Performance
